@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400; /* Graisse 400 pour le corps du texte */
+}
+
+/* Styles pour les titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600; /* Graisse 600 pour les titres */
+}
+
+/* Styles pour le texte en gras */
+.p {
+  font-size: 0.875rem; /* Réduit la taille de la police des paragraphes */
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  max-height: 250px; /* Définir la hauteur maximale de l'image de bannière */
+  overflow: hidden; /* Cache le débordement si l'image est plus grande */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid blue; /* Couleur de la ligne */
+  margin-bottom: 20px;
+  max-width: 500px; /* Fixe la largeur maximale */
+  width: 100%; /* Permet au conteneur de s'adapter à la largeur de l'écran */
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-around; /* Ajoute plus d'espace entre les cartes */
+  gap: 15px; /* Augmente l'espacement entre les cartes de service */
+}
+
+.service-card {
+  border: 1px solid #ddd; /* Bordure autour des cartes de service */
+  padding: 30px; /* Augmente le padding pour des cartes plus grandes */
+  border-radius: 8px;
+  text-align: center;
+  flex: 1; /* Permet aux cartes de s'étendre pour occuper l'espace disponible */
+  max-width: 400px; /* Augmente la largeur des cartes */
+  max-height: 300px; /* Augmente la hauteur maximale des cartes */
+  margin-bottom: 50px; /* Augmente l'espace entre les cartes et le footer */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoute une ombre pour plus de profondeur */
+}
+
+.bi-code-slash, .bi-search, .ux-icon {
+  font-size: 1.7rem; /* Augmente la taille des icônes */
+  color: blue;
+  margin-bottom: 20px; /* Ajoute plus d'espace sous les icônes */
+}

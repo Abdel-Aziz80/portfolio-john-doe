@@ -30,9 +30,11 @@ code {
   border-bottom: 2px solid #3707d6; /* Couleur de la ligne */
   padding-bottom: 5px; /* Espacement sous la ligne */
   margin-bottom: 15px; /* Espacement sous le titre */
+  align-content: center;
  }
 
-.hero {
+ .hero {
+  height: 300px; /* Augmentation de la hauteur de l'image */
   position: relative;
   text-align: center;
   color: white;
@@ -40,7 +42,6 @@ code {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Utilise toute la hauteur de la fenêtre */
 }
 
 .hero-image {
@@ -63,7 +64,6 @@ code {
   width: 150px;
   height: 150px;
   object-fit: cover;
-  border-radius: 50%; /* Rend l'image circulaire */
 }
 
 .skill-bar {
@@ -79,11 +79,11 @@ code {
   padding-right: 10px;
 }
 
-.skill span {
-  background-color: #007bff;
-  color: white;
-  padding: 5px 10px;
-  display: inline-block;
+
+.bloc {
+border-style: 10px solid rgb(179, 177, 177);
+box-shadow: 5px 5px 5px beige;
+
 }
 .content-container {
   display: flex;
@@ -117,6 +117,9 @@ code {
   .title-container {
     flex-direction: column; /* Aligne les titres verticalement sur les petits écrans */
     align-items: flex-start; /* Aligne les titres au début sur les petits écrans */
+  }
+  .col {
+    padding: 10px;
   }
 
   .title-container h2, .title-container h3 {
