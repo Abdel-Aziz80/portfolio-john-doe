@@ -5,7 +5,7 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import HomePage from './components/HomePage.jsx';
 import ServicesPage from './components/ServicesPage.jsx';
-import RealisationPage from './components/RealisationPage.jsx';
+import Portfolio from './components/Portfolio.jsx';
 import ContactPage from './components/ContactPage.jsx';
 import LegalPage from './components/LegalPage.jsx';
 import GithubModal from './components/GithubModal.jsx';
@@ -32,7 +32,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage handleShowModal={handleShowModal} />} />
             <Route path="/services" element={<ServicesPage />} />
-            <Route path="/realisations" element={<RealisationPage />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/mentions-legales" element={<LegalPage />} />
           </Routes>

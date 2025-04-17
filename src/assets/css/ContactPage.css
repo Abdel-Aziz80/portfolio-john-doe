@@ -1,0 +1,10 @@
+/* ContactPage.css */
+.titre {
+text-align: center;
+border-bottom: 5px blue;
+}
+.google-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }

@@ -1,0 +1,20 @@
+/* Footer.css */
+
+.footer-wrapper {
+  background-color: #292323;
+  color: white;
+  padding: 10px 0;
+  max-height: 50px; /* Définir la hauteur maximale du pied de page */
+  overflow: hidden; /* Cache le débordement si le contenu est plus grand */
+}
+
+
+.mb-1, .text-white, .list-unstyled {
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+
+
+
