@@ -1,47 +1,9 @@
-/* HomePage.css */
-body {
-  margin: 0;
-  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400; /* Graisse 400 pour le corps du texte */
-}
-
-/* Styles pour les titres */
-h1, h2 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600; /* Graisse 600 pour les titres */
-}
-
-/* Styles pour le texte en gras */
-strong {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600; /* Graisse 600 pour les balises <strong> */
-}
-
-/* Styles pour les blocs de code */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-
-.section-title {
-  border-bottom: 2px solid #3707d6; /* Couleur de la ligne */
-  padding-bottom: 5px; /* Espacement sous la ligne */
-  margin-bottom: 15px; /* Espacement sous le titre */
-  align-content: center;
- }
-
- .hero {
-  height: 300px; /* Augmentation de la hauteur de l'image */
+/* HERO SECTION */
+.hero {
   position: relative;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 700px;  /* Ajuste la hauteur en fonction de ce que tu veux */
+  width: 100%;
+  overflow: hidden;  /* Cache tout ce qui dépasse */
 }
 
 .hero-image {
@@ -50,79 +12,155 @@ code {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Assure que l'image couvre toute la section */
-  z-index: 1;
+  object-fit: cover; /* Assure que l'image couvre toute la section sans être déformée */
+  z-index: 1;  /* Place l'image derrière le texte */
 }
 
 .hero-overlay {
   position: relative;
   z-index: 2;
-  text-align: center;
-}
-
-.profile-image {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-.skill-bar {
-  margin-top: 20px;
-}
-
-.skill {
-  background-color: #e0e0e0;
-  border-radius: 5px;
-  margin: 5px 0;
-  overflow: hidden;
-  text-align: right;
-  padding-right: 10px;
-}
-
-
-.bloc {
-border-style: 10px solid rgb(179, 177, 177);
-box-shadow: 5px 5px 5px beige;
-
-}
-.content-container {
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px; /* Espacement entre les sections */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0 20px;
+  
+}
+
+/* HEADER / NAV DÉCALAGE */
+.main-header,
+.main-nav {
+  padding: 20px 40px;
+}
+
+.main-nav .nav-links {
+  display: flex;
+  justify-content: flex-end; /* Positionnement des éléments à droite */
+  align-items: center;
+}
+
+.main-header .logo {
+  text-align: left;
+}
+
+.main-nav .nav-links .john-doe {
+  margin-left: 50px !important; /* Décalage à droite avec !important */
+}
+
+.main-nav .nav-links .mention-legale {
+  margin-left: 20px !important; /* Décalage à gauche de la mention légale */
+}
+
+/* CONTENEUR PRINCIPAL */
+.bloc {
+  border: 1px solid rgb(179, 177, 177);
+  box-shadow: 0 4px 12px rgba(190, 147, 147, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.bloc .row {
+  padding-left: 30px; /* Espacement à gauche */
+  padding-right: 30px; /* Espacement à droite */
 }
 
 .section-title {
-  border-bottom: 4px solid #3707d6; /* Couleur de la ligne */
-  padding-bottom: 5px; /* Espacement sous la ligne */
-  margin-bottom: 15px; /* Espacement sous le titre */
+  border-bottom: 4px solid #3707d6;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+  
+  font-weight: 600;
+  color: #333;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 0;
 }
 
-.title-container {
-  display: flex;
-  justify-content: space-between; /* Aligne les titres avec un espace entre eux */
-  align-items: center; /* Centre les titres verticalement */
-  width: 100%; /* Assure que le conteneur prend toute la largeur disponible */
-  margin-bottom: 20px; /* Espacement sous le conteneur de titres */
+/* ESPACES ENTRE LES PARTIES */
+.bloc .mb-4 {
+  margin-bottom: 20px;
 }
 
-.title-container h2, .title-container h3 {
-  flex: 1; /* Permet aux titres de s'étendre pour occuper l'espace disponible */
-  text-align: left; /* Centre le texte des titres */
+/* BARRES DE COMPÉTENCES */
+.progress {
+  height: 10px; /* Réduire la hauteur des progress bars */
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1px; /* Réduction de l'espace entre les barres de compétence */
 }
 
-/* Media Queries for Responsiveness */
+.progress-bar {
+  line-height: 15px; /* Alignement vertical */
+  font-size: 0.9rem;
+}
+
+.progress + p {
+  margin-bottom: 0;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .title-container {
-    flex-direction: column; /* Aligne les titres verticalement sur les petits écrans */
-    align-items: flex-start; /* Aligne les titres au début sur les petits écrans */
-  }
-  .col {
-    padding: 10px;
+  .hero-overlay h1 {
+    font-size: 2rem;
   }
 
-  .title-container h2, .title-container h3 {
-    text-align: left; /* Aligne le texte à gauche sur les petits écrans */
+  .hero {
+    height: 700px !important;
+  }
+
+  
+
+  .bloc {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 1.4rem;
+  }
+
+  .main-header,
+  .main-nav {
+    padding: 10px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav .nav-links {
+    margin-top: 10px;
+  }
+}
+
+/* Sur petits écrans (767px et moins) */
+@media (max-width: 767px) {
+  .bloc .row {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments verticalement */
+    justify-content: center;
+  }
+
+  .bloc .col {
+    width: 100%; /* Les colonnes prennent toute la largeur disponible */
+    margin-bottom: 20px; /* Marge entre les sections */
+  }
+
+  /* Réduire le padding et marges pour que tout reste dans le box-shadow */
+  .bloc {
+    padding: 20px;
+    margin: 0 auto; /* Assure que tout reste centré et dans le box-shadow */
+    max-width: 100%; /* S'assurer que tout reste à l'intérieur */
+  }
+
+  .hero-overlay {
+    padding: 0 20px; /* Ajuste le padding pour qu'il reste dans la section */
   }
 }

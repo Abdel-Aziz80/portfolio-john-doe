@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import '../assets/css/Footer.css';
 

@@ -1,0 +1,32 @@
+/* header.css */
+
+.custom-navbar {
+    padding: 0 40px;
+  }
+  
+  .navbar-brand {
+    margin-right: auto;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+  
+  .nav-link {
+    margin: 0 10px;
+  }
+
+  /* Souligner le lien actif */
+.nav-link.active {
+    text-decoration: underline;
+    color: white; /* Pour garder la couleur en blanc */
+  }
+  
+  /* Change la couleur du lien quand il est survolé */
+  .nav-link:hover {
+    text-decoration: underline;
+  }

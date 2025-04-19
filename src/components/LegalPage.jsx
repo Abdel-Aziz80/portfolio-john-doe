@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Accordion } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import '../assets/css/style.css';
 import '../assets/css/Footer.css';
 
