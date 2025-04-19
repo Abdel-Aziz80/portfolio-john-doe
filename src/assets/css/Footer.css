@@ -1,20 +1,85 @@
 /* Footer.css */
 
+/* Style global du footer */
 .footer-wrapper {
-  background-color: #292323;
-  color: white;
+  background-color: #212529;
+  color: #fff;
   padding: 10px 0;
-  max-height: 50px; /* Définir la hauteur maximale du pied de page */
-  overflow: hidden; /* Cache le débordement si le contenu est plus grand */
+  font-size: 0.85rem; /* Taille des lettres réduite dans le footer */
 }
 
+.footer-wrapper h5 {
+  font-weight: 600;
+  margin-bottom: 10px; 
+  font-size: 1.1rem; /* Légèrement plus grand pour les titres dans le footer */
+}
 
-.mb-1, .text-white, .list-unstyled {
-  color: white;
-  font-size: 0.8rem;
+.footer-wrapper p,
+.footer-wrapper a,
+.footer-wrapper li {
+  font-size: 0.85rem; /* Taille réduite pour le texte dans le footer */
+  line-height: 1.4;
+}
+
+.footer-wrapper a {
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-wrapper a:hover {
+  text-decoration: underline;
+  color: #f8f9fa;
+}
+
+.footer-wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-wrapper ul li {
+  margin-bottom: 5px;
+}
+
+.footer-wrapper .d-flex a {
+  margin-right: 16px;
+}
+
+/* Lien vers les réseaux sociaux */
+.footer-wrapper .social-links a {
+  font-size: 1rem; /* Taille plus grande pour les liens GitHub, LinkedIn, Twitter */
+  font-weight: bold;
+}
+
+.footer-wrapper .col {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.footer-wrapper .col-md-4 {
+  margin-bottom: 20px;
 }
 
 
+/* Footer styles - media query */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    padding: 30px 20px; /* Réduction du padding pour un meilleur ajustement */
+    font-size: 0.85rem; /* Réduction de la taille des textes pour les petits écrans */
+  }
 
+  .footer-wrapper .col {
+    padding-left: 15px; /* Ajuste le padding gauche pour éviter les bords */
+    padding-right: 15px; /* Ajuste le padding droit */
+  }
+
+  .footer-wrapper .d-flex {
+    justify-content: center; /* Centre les éléments social links */
+    margin-top: 15px;
+  }
+
+  .footer-wrapper .social-links a {
+    font-size: 1rem; /* Taille légèrement plus grande pour les liens sociaux */
+    margin-right: 10px; /* Ajoute de l'espace entre les liens sociaux */
+  }
+}
 

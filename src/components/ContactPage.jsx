@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const ContactPage = () => (
   <Container>
@@ -9,9 +10,9 @@ const ContactPage = () => (
         <p>Pour me contacter en vue d'un entretien ou d'une future collaboration, merci de remplir le formulaire de contact.</p>
       </Col>
     </Row>
-    <Row>
+    <Row className='box-shadow'>
       <Col md={6}>
-        <h2>Formulaire de contact</h2>
+         <h2>Formulaire de contact</h2>     
         <Form>
           <Form.Group controlId="formName">
             <Form.Label>Nom</Form.Label>

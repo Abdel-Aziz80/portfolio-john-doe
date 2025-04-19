@@ -1,45 +1,21 @@
-body {
-  margin: 0;
-  font-family: 'Nunito Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400; /* Graisse 400 pour le corps du texte */
-}
 
-/* Styles pour les titres */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600; /* Graisse 600 pour les titres */
-}
-
-/* Styles pour le texte en gras */
-.p {
-  font-size: 0.875rem; /* Réduit la taille de la police des paragraphes */
-}
-
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
+.banner {
+  width: 100%;
+  height: 300px; /* Ajuste la hauteur selon tes préférences */
   background-size: cover;
   background-position: center;
-  max-height: 250px; /* Définir la hauteur maximale de l'image de bannière */
-  overflow: hidden; /* Cache le débordement si l'image est plus grande */
+  position: relative;
 }
 
-.hero-overlay {
+.banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  z-index: 1;
 }
+
 
 .header-wrapper {
   display: flex;

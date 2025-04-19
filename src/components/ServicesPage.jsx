@@ -8,8 +8,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 const ServicesPage = () => (
   <div>
     {/* Section de Héros avec l'image de bannière */}
-    <div className="hero" style={{ backgroundImage: `url(${banner})` }}>
-      <div className="hero-overlay">
+    <div className="banner" style={{ backgroundImage: `url(${banner})` }}>
+      <div className="banner-overlay">
         {/* Disponible pour faire des ajouts de contenu si nécessaire */}
       </div>
     </div>
