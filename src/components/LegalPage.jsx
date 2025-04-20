@@ -1,14 +1,19 @@
 import React from 'react';
 import { Container, Accordion } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/LegalPage.css';
 import '../assets/css/style.css';
 import '../assets/css/Footer.css';
 
 const LegalPage = () => (
   <div className="content-wrapper">
+    <div className="legalpage-wrapper">
+      <div className="legalpage-container">
+        <h1>Mentions Légales</h1>
+      </div>
+    </div>
     <Container>
-      <h1 className="section-title">Mentions Légales</h1>
-      <Accordion>
+      <Accordion defaultActiveKey="0">
         <Accordion.Item eventKey="0">
           <Accordion.Header>Éditeur du site</Accordion.Header>
           <Accordion.Body>
@@ -38,8 +43,10 @@ const LegalPage = () => (
         </Accordion.Item>
       </Accordion>
     </Container>
+    <footer className="footer">
+      {/* Contenu footer ici */}
+    </footer>
   </div>
-
 );
 
 export default LegalPage;

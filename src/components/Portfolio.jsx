@@ -64,8 +64,8 @@ const Portfolio = () => (
     <Container>
       <Row>
         <Col>
-          <div className="header-wrapper">
-            <div className="header-container">
+          <div className="portfolio-wrapper">
+            <div className="portfolio-container">
               <h2 className="text-center mb-4">Portfolio</h2>
               <p className="text-center">Voici quelques-unes de mes réalisations</p>
             </div>

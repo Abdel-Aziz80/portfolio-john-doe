@@ -1,0 +1,39 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0; /* Supprime les marges et padding par défaut */
+}
+
+.legalpage-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.legalpage-container {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid blue; /* Couleur de la ligne */
+  margin-bottom: 20px;
+  max-width: 500px; /* Fixe la largeur maximale */
+  width: 100%; /* Permet au conteneur de s'adapter à la largeur de l'écran */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+  padding-bottom: 10%; /* Donne l'espace de 10% en bas du contenu */
+}
+
+footer.footer {
+  position: relative; /* Cela permet au footer de se placer selon le flux normal */
+  margin-top: auto; /* Pousse le footer en bas */
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
