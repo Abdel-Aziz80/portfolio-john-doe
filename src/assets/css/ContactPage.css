@@ -1,7 +1,5 @@
 /* ContactPage.css */
-.text-center {
-  text-align: center;
-}
+
 
 .divider {
   width: 60px;
@@ -9,6 +7,29 @@
   background-color: #000;
   margin: 15px auto;
   border-radius: 5px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 5px solid blue; /* Couleur de la ligne */
+  margin-bottom: 20px;
+  max-width: 900px; /* Fixe la largeur maximale */
+  width: 100%; /* Permet au conteneur de s'adapter à la largeur de l'écran */
+}
+
+
+
+.button {
+  margin-top: 20px; /* Optionnel : espace entre le formulaire et le bouton */
+  padding: 10px 20px; /* Ajuste le padding si nécessaire */
+  width: auto; /* Assurer que le bouton n'occupe que l'espace nécessaire */
 }
 
 .box-shadow {

@@ -17,13 +17,13 @@
 }
 
 
-.header-wrapper {
+.service-wrapper {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 }
 
-.header-container {
+.service-container {
   text-align: center;
   padding: 20px;
   border-bottom: 5px solid blue; /* Couleur de la ligne */

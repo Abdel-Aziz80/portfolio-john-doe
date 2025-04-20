@@ -8,7 +8,7 @@ import '../assets/css/Footer.css';
 
 // Composant fonctionnel Footer pour afficher le pied de page
 const Footer = () => (
-  <footer className="footer-wrapper" style={{ maxHeight: '200px', overflow: 'hidden' }}>
+  <footer className="footer-wrapper">
     <Container>
       <Row>
         {/* Colonne 1 : Informations de contact et réseaux sociaux */}

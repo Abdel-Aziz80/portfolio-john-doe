@@ -15,8 +15,8 @@ const ServicesPage = () => (
     </div>
 
      {/* Conteneur pour le titre et le paragraphe avec un border-bottom */}
-     <div className="header-wrapper">
-      <div className="header-container">
+     <div className="service-wrapper">
+      <div className="service-container">
         <h1>Mon offre de services</h1>
         <p>Voici les prestations sur lesquelles je peux intervenir</p>
       </div>

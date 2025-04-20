@@ -6,6 +6,21 @@
     position: relative;
   }
   
+  .portfolio-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-container {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 5px solid blue; /* Couleur de la ligne */
+    margin-bottom: 20px;
+    max-width: 500px; /* Fixe la largeur maximale */
+    width: 100%; /* Permet au conteneur de s'adapter à la largeur de l'écran */
+  }
+
   .banner-overlay {
     position: absolute;
     top: 0;
