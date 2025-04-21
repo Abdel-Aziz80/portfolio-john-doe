@@ -1,0 +1,45 @@
+.custom-modal .modal-content {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .profile-image-container {
+    margin-right: 20px;
+  }
+  
+  .profile-image {
+    width: 250px;
+    height: 350px;
+  }
+  
+  .profile-details-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #555;
+    padding-bottom: 10px;
+  }
+  
+  .profile-section:last-child {
+    border-bottom: none;
+  }
+  
+  .icon-placeholder {
+    margin-right: 10px;
+  }
+  
+  .clickable {
+    cursor: pointer;
+    color: #1da1f2;
+  }
+  

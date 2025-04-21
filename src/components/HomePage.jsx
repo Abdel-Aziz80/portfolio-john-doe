@@ -8,6 +8,7 @@ import '../assets/css/HomePage.css';
 // Section À propos
 const AboutSection = () => (
   <Col md={6} sm={12} className="mb-3">
+    <h2 className="section-title">À propos</h2>
     <img src={JohnDoeAbout} alt="John Doe" className="img-fluid mb-3" />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -33,6 +34,7 @@ const SkillsSection = () => {
 
   return (
     <Col md={6}>
+    <h2 className="section-title">Mes compétences</h2>
       {skills.map(({ name, level, color }) => (
         <div key={name} className="mb-4">
           <p>{name} {level}%</p>
@@ -61,11 +63,11 @@ const HomePage = ({ handleShowModal }) => (
     {/* Contenu principal */}
     <Container fluid className='bloc'>
       <Row>
-        <Col md={6}>
-          <h2 className="section-title">À propos</h2>
+        <Col>
+          
         </Col>
         <Col md={6}>
-          <h2 className="section-title">Mes compétences</h2>
+         
         </Col>
       </Row>
       <Row>
